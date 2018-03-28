@@ -1,6 +1,7 @@
 #include "Game.h"
 Game::Game()
 {
+	gameRunning = true;
 	if (SDL_Init(SDL_INIT_EVERYTHING) < 0)
 	{
 		exit(0);
@@ -24,6 +25,9 @@ Game::Game()
 	gameTime->getInstance();
 	lastUpdate = gameTime->running();
 
+	eventListener = new EventListener();
+	input = new InputHandler(&m_event, eventListener);
+
 }
 
 
@@ -31,8 +35,9 @@ Game::~Game() {}
 
 void Game::Run()
 {
-	while (true)
+	while (gameRunning)
 	{
+		input->InputCheck(gameRunning);
 		currentUpdate = gameTime->running();
 		if ((currentUpdate - lastUpdate) > GameTick)
 		{

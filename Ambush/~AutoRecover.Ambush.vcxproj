@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -119,13 +119,21 @@
     <ClInclude Include="EventListener.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameTime.h" />
+    <ClInclude Include="Graph.h" />
+    <ClInclude Include="GraphArc.h" />
+    <ClInclude Include="GraphNode.h" />
     <ClInclude Include="InputManager.h" />
+    <ClInclude Include="NodeSearchCostComparer.h" />
+    <ClInclude Include="Threading.h" />
+    <ClInclude Include="WorldMap.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameTime.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Threading.cpp" />
+    <ClCompile Include="WorldMap.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
