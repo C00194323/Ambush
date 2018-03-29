@@ -25,7 +25,6 @@ void InputHandler::InputCheck(bool & gameRunning)
 				m_eventlisten->SPACE = true;
 				break;
 			case SDLK_a:
-				std::cout << "A Pressed" << std::endl;
 				m_eventlisten->A = true;
 				break;
 			case SDLK_d:

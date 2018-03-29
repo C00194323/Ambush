@@ -28,6 +28,8 @@ Game::Game()
 	eventListener = new EventListener();
 	input = new InputHandler(&m_event, eventListener);
 
+	gameWorld = new WorldMap();
+	gameWorld->init();
 }
 
 

@@ -395,8 +395,6 @@ void Graph<NodeType, ArcType>::aStar(Node* pStart, Node* pDest, void(*pProcess)(
 	int infin = std::numeric_limits<int>::max() - 10000;
 	std::priority_queue < Node *, std::vector<Node *>, NodeSearchCostComparer > pq;
 
-
-
 	for (int i = 0; i < m_nodes.size(); i++)
 	{
 		NodeType & data = m_nodes.at(i)->data();

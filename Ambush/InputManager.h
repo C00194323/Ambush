@@ -31,24 +31,24 @@ public:
 			}
 		}
 
-		gControllerHaptic = SDL_HapticOpenFromJoystick(controller);
+		//gControllerHaptic = SDL_HapticOpenFromJoystick(controller);
 
-		if (gControllerHaptic == NULL)
-		{
-			printf("Warning: Controller does not support haptics! SDL Error: %s\n", SDL_GetError());
-		}
-		else
-		{
-			//Get initialize rumble
-			if (SDL_HapticRumbleInit(gControllerHaptic) < 0)
-			{
-				printf("Warning: Unable to initialize rumble! SDL Error: %s\n", SDL_GetError());
-			}
-		}
-		if (SDL_HapticRumblePlay(gControllerHaptic, 0.75, 250) != 0)
-		{
-			printf("Warning: Unable to play rumble! %s\n", SDL_GetError());
-		}
+		//if (gControllerHaptic == NULL)
+		//{
+		//	printf("Warning: Controller does not support haptics! SDL Error: %s\n", SDL_GetError());
+		//}
+		//else
+		//{
+		//	//Get initialize rumble
+		//	if (SDL_HapticRumbleInit(gControllerHaptic) < 0)
+		//	{
+		//		printf("Warning: Unable to initialize rumble! SDL Error: %s\n", SDL_GetError());
+		//	}
+		//}
+		//if (SDL_HapticRumblePlay(gControllerHaptic, 0.75, 250) != 0)
+		//{
+		//	printf("Warning: Unable to play rumble! %s\n", SDL_GetError());
+		//}
 	};
 	~InputHandler();
 
