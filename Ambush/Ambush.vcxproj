@@ -124,6 +124,7 @@
     <ClInclude Include="GraphNode.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="NodeSearchCostComparer.h" />
+    <ClInclude Include="NPC.h" />
     <ClInclude Include="TextureLoader.h" />
     <ClInclude Include="Threading.h" />
     <ClInclude Include="WorldMap.h" />
@@ -132,6 +133,7 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameTime.cpp" />
     <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="NPC.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="TextureLoader.cpp" />
     <ClCompile Include="Threading.cpp" />

@@ -10,6 +10,7 @@
 #include <algorithm>
 #include <Windows.h>
 #include <iostream>
+#include "TextureLoader.h"
 #include <fstream>
 #include <string>
 #include "WorldMap.h"
@@ -39,6 +40,7 @@ private:
 
 	EventListener * eventListener;
 	InputHandler * input;
+	TextureLoader* textureHandler;
 	WorldMap* gameWorld;
 
 	float lastUpdate = 0.0f;

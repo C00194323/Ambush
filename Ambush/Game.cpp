@@ -27,9 +27,10 @@ Game::Game()
 
 	eventListener = new EventListener();
 	input = new InputHandler(&m_event, eventListener);
+	textureHandler = TextureLoader::Instance();
 
 	gameWorld = new WorldMap();
-	gameWorld->init();
+	gameWorld->init(textureHandler, gameRenderer);
 }
 
 
@@ -52,6 +53,8 @@ void Game::Run()
 		SDL_SetRenderDrawColor(gameRenderer, 0, 0, 0, 255);
 		SDL_RenderClear(gameRenderer);
 		
+		gameWorld->Render(gameRenderer);
+
 		SDL_RenderPresent(gameRenderer);
 	}
 
