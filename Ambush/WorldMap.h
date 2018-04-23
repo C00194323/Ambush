@@ -6,7 +6,7 @@
 class WorldMap
 {
 public:
-	WorldMap() { width = 100; height = 100; };
+	WorldMap() { width = 1000; height = 1000; };
 	~WorldMap() {};
 	void init(TextureLoader * t, SDL_Renderer * render);
 	void Render(SDL_Renderer * render);
